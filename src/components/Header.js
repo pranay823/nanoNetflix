@@ -1,5 +1,4 @@
 import { logo_url, SupportedLanguages } from "../utils/constants";
-import profile_img from '../assests/profile-url.png';
 import { signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
@@ -36,7 +35,7 @@ const Header = ( ) =>{
      navigate("/")
       }
     });
-  },[]);
+  },[dispatch, navigate]);
 
   const hamburgerClickHandler =()=>{
   setopen(!open)
